@@ -43,12 +43,4 @@ if (app.get("env") === "development") {
   https.createServer(options, app).listen(process.env.PORT_HTTPS, () => {
     console.log(`Listening on port ${process.env.PORT_HTTPS}...`);
   });
-  // ssl_certificate         /etc/letsencrypt/live/www.bayramdabak.com/fullchain.pem;
-  // ssl_certificate_key     /etc/letsencrypt/live/www.bayramdabak.com/privkey.pem;
 }
-// app.listen(port, () => {
-//   console.log(`Listening on port ${port}...`);
-
-//   //Get application environment
-//   console.log(`App is running in ${app.get("env")} environment`);
-// });
